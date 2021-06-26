@@ -24,21 +24,21 @@
 <body>
 
 <!---------- Header banner ---------->
-    <header class="padded grid text-center tall-60">
-        <div class="header-nav col-12 grid">
-            <div class="col-4">
+    <header class="grid text-center tall-60">
+        <div class="header-nav col-12-top grid">
+            <div class="col-4-middle">
                 <a href="/index.html" class="logo"> 
                     <h2> The Sleep Co </h2>
                 </a>
             </div>
-            <nav class="col-8 right">
+            <nav class="col-8-middle text-right">
                 <a href="/index.html"> Home </a>
                 <a href="/about.html"> About </a>
                 <a href="/products.html"> Products </a>
                 <a href="/contact.html"> Contact </a>
             </nav>
         </div>
-        <div class="col-12-middle"> 
+        <div class="col-12"> 
             <h3 class="font-weight-extra-bold">
                 why <span class="featured-text"> wait?</span>
             </h3>
@@ -55,7 +55,12 @@
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati adipisci beatae soluta impedit voluptatem amet ipsam a quas fugit pariatur rem, explicabo cumque dolores nesciunt. Reprehenderit non optio deleniti.</p>
         </div>
         <div class="col-6 padded">
-            <h2> ADD CONTACT FORM HERE!</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="_replyto" placeholder="Your Email">
+                <textarea name="message" placeholder="Tell us what you want..." rows="4"></textarea>
+                <button class="button" type="submit"> SUBMIT </button>
+            </form>
         </div>
     </section>
 
