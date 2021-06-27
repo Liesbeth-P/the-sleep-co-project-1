@@ -2,6 +2,10 @@
 <html>
 <!-- This is the head of our html where we add external resources and metadata -->
 <head>
+
+    <!-- Viewport meta for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> Sleep like a baby </title>
 
     <!-- This is our fontawesome icon -->
@@ -24,20 +28,20 @@
 <body>
 
     <!---------- Header banner ---------->
-    <header class="grid text-center tall-100">
+    <header class="grid text-center tall-100 md-tall-80">
         <div class="header-nav col-12-top grid">
-            <div class="col-4-middle">
+            <div class="col-5_sm-12-middle sm-padded-b-0 text-left sm-text-center">
                 <a href="/index.html" class="logo"> 
                     <h2> The Sleep Co </h2>
                 </a>
             </div>
-            <nav class="col-8-middle text-right">
+            <nav class="col-7_sm-12-middle text-right sm-text-center">
                 <a href="/index.html"> Home </a>
                 <a href="/about.html"> About </a>
                 <a href="/products.html"> Products </a>
                 <a href="/contact.html"> Contact </a>
             </nav>
-        </div>
+        </div> 
         <div class="col-12"> 
             <h3 class="font-weight-extra-bold">
                 <span class="featured-text">sleep</span> like a baby
@@ -50,23 +54,25 @@
 
     <!---------- Gallery / about section ---------->
     <section class="grid">
-        <div class="padded col-6-middle">
+        <div class="padded col-6_xs-12-middle">
             <h2>
                 built to last a <span class="featured-text">lifetime</span>
             </h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum a necessitatibus cupiditate odio! Incidunt ullam nesciunt accusantium cum debitis sunt tempore nostrum, eligendi tenetur architecto sequi maiores quibusdam aperiam vitae.
             </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste blanditiis distinctio maiores atque sed, dignissimos, tenetur eos delectus ut, voluptatem adipisci! Doloribus itaque saepe nobis quis iste quidem amet nostrum!</p>
         </div>
-        <div class="bg-image bg-bed col-6 tall-70">
+        <div class="bg-image bg-bed col-6_xs-12 tall-70 hide-xs"
             <!-- background image of a bed -->
         </div>
-        <div class="bg-image bg-pug col-6 tall-70">
+        <div class="bg-image bg-pug col-6_xs-12 tall-70">
             <!-- background image of a pug sleeping -->
         </div>
-        <div class="padded col-6-middle">
+        <div class="padded col-6_xs-12-middle">
             <h2> so <span class="featured-text">soft</span> you'll melt </h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt odit totam, impedit dolor consequatur eligendi tempore tenetur blanditiis, ut modi, perspiciatis quam iste iure qui quaerat quisquam fuga quasi?</p>  
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, mollitia in nobis qui quas ab obcaecati repudiandae, nostrum, saepe perspiciatis molestiae eius esse officia non ducimus tenetur quidem eveniet aperiam.</p>
         </div> 
     </section>
 
@@ -75,19 +81,19 @@
         <div class="padded-sm col-12 text-center">
             <h2> <span class="featured-text">features</span> you will love </h2>
         </div>
-        <div class="padded-sm col-3">
+        <div class="padded-sm col-3_sm-6">
             <i <i class="fas fa-cloud"></i>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!</p>
         </div>
-        <div class="padded-sm col-3">
+        <div class="padded-sm col-_sm-6">
             <i <i class="fas fa-cloud"></i>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!</p>
         </div>
-        <div class="padded-sm col-3">
+        <div class="padded-sm col-3_sm-6">
             <i <i class="fas fa-cloud"></i>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!</p>
         </div>
-        <div class="padded-sm col-3">
+        <div class="padded-sm col-3_sm-6">
             <i <i class="fas fa-cloud"></i>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!</p>
         </div>
@@ -117,18 +123,30 @@
     </section>
 
     <!---------- Footer ---------->
-    <footer class="padded grid-spaceBetween bg-dark">
-        <div class="col-4-bottom">
-            <h2> Let's <br /> <span class="featured-text">connect</span></h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatibus! Numquam nostrum eum, exercitationem animi vel laboriosam neque eaque nihil quaerat illum ducimus repudiandae obcaecati sed temporibus, officia sit aspernatur.</p>
+    <footer class="padded grid-middle bg-dark text-center">
+        <div class="col-12">
+            <h3> THE SLEEP CO </h3>
+            <div class="margin-t-2 padded-l-lg padded-r-lg">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quas ullam dolorem voluptatum, dicta repellendus modi vel officiis sit sapiente minima sunt unde autem, at fuga dolores dignissimos! </p>
+            </div>
         </div>
-        <div class="col-5-bottom">
-            <p> <strong>Call:</strong> <a href="tel:#"> 04555 5555</a> </p>
-            <p> <strong>Email:</strong> <a href="mailto:#"> hello@thesleep.co</a> </p>
-            <p> <strong>Store:</strong> 55 Main St, Chicago </p>
-            <p> <strong>Instagram:</strong> <a href="https://www.instagram.com/thesleepco"> @thesleepco</a> </p>
-        </div>
+        <nav class="col-12 margin-t-1">
+            <a href="#"> 
+                <i class="fab fa-facebook-square"></i> 
+            </a>
+            <a href="#">
+                <i class="fab fa-pinterest-square"></i>
+            </a>
+            <a href="a">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </nav>
     </footer>
+    
+    <!---------- Copyright section ---------->
+    <section class="bg-black text-center">
+        <p> Copyright 2021 </p>
+    </section>
 
 </body>
 </html>
