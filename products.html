@@ -1,5 +1,12 @@
 --- 
 layout: default 
+cards:
+ - heading: Small heading 
+   description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magni dicta nesciunt iure ab modi aliquam expedita veniam autem quis recusandae obcaecati reiciendis, commodi voluptate fuga officia sint cum necessitatibus.
+ - heading: Small heading 
+   description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magni dicta nesciunt iure ab modi aliquam expedita veniam autem quis recusandae obcaecati reiciendis, commodi voluptate fuga officia sint cum necessitatibus.
+ - heading: Small heading 
+   description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error magni dicta nesciunt iure ab modi aliquam expedita veniam autem quis recusandae obcaecati reiciendis, commodi voluptate fuga officia sint cum necessitatibus.
 --- 
 
 <!---------- Header banner ---------->
@@ -42,33 +49,18 @@ layout: default
 
     <!---------- Cards ---------->
     <section class="grid padded">
+
+        {% for item in page.cards %}
         <div class="col-4 padded-sm"> 
             <div class="card">
                 <div class="bg-image portrait"></div>
                 <div class="padded-1">
-                    <h3> little heading </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque autem possimus nesciunt doloribus officia, nemo incidunt exercitationem numquam, perferendis iusto recusandae omnis esse iure illo sequi vitae quos molestiae.</p>
+                    <h3> {{item.heading}} </h3>
+                    <p> {{item.description}} </p>
                 </div>
             </div>   
         </div>
-        <div class="col-4 padded-sm"> 
-            <div class="card">
-                <div class="bg-image portrait"></div>
-                <div class="padded-1">
-                    <h3> little heading </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque autem possimus nesciunt doloribus officia, nemo incidunt exercitationem numquam, perferendis iusto recusandae omnis esse iure illo sequi vitae quos molestiae.</p>
-                </div>
-            </div>   
-        </div>
-        <div class="col-4 padded-sm"> 
-            <div class="card">
-                <div class="bg-image portrait"></div>
-                <div class="padded-1">
-                    <h3> little heading </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem itaque autem possimus nesciunt doloribus officia, nemo incidunt exercitationem numquam, perferendis iusto recusandae omnis esse iure illo sequi vitae quos molestiae.</p>
-                </div>
-            </div>   
-        </div>
+        {% endfor %}
     </section>
 
     <!---------- Image banner  ---------->
