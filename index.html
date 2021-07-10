@@ -1,9 +1,16 @@
 --- 
 layout: default
+featured:
+ - icon: fas fa-cloud
+   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!
+ - icon: fas fa-apple-alt
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore nesciunt eveniet dolor libero? At eius vero modi quae illum incidunt dolores eos sit perferendis repellat, accusantium, error, deleniti ullam.
+ - icon: fas fa-carrot
+   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio minima nisi iste rem voluptatum laborum, sequi sunt blanditiis adipisci! Voluptas aliquam soluta laboriosam cumque maiores ex esse nemo atque animi.
 --- 
 
     <!---------- Header banner ---------->
-    <header class="grid text-center tall-100 md-tall-80">
+    <header class="grid tall-100 md-tall-80">
 
         {% include header-nav.html %}
 
@@ -42,26 +49,16 @@ layout: default
     </section>
 
     <!---------- Feature icon grid ---------->
-    <section class="padded grid bg-dark">
+    <section class="padded grid-center bg-dark">
         <div class="padded-sm col-12 text-center">
             <h2> <span class="featured-text">features</span> you will love </h2>
         </div>
+        {% for item in page.featured %}
         <div class="padded-sm col-3_sm-6 stack-xxs">
-            <i <i class="fas fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!</p>
+            <i <i class="{{item.icon}}"></i>
+            <p> {{item.description}} </p>
         </div>
-        <div class="padded-sm col-3-_sm-6 stack-xxs">
-            <i <i class="fas fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!</p>
-        </div>
-        <div class="padded-sm col-3_sm-6 stack-xxs">
-            <i <i class="fas fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!</p>
-        </div>
-        <div class="padded-sm col-3_sm-6 stack-xxs">
-            <i <i class="fas fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, officia minus magnam dolor debitis accusantium ipsam repellat sint rem ipsum sit quisquam voluptatibus. Hic ipsum corrupti mollitia accusamus recusandae nulla!</p>
-        </div>
+        {% endfor %}
     </section>
 
     <!---------- Image banner  ---------->
