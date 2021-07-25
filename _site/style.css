@@ -239,15 +239,6 @@ footer a {
     border-bottom: none;
 }
 
-/* Background of gallery when active  */
-.lg-backdrop {
-    background-color: rgb(20,20,20);
-}
-
-.lg-backdrop.in {
-    opacity: 0.95;
-}
-
 /* Font Awesome Icons ----------*/
 .fas,
 .fab {
