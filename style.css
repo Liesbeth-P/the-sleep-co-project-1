@@ -289,7 +289,14 @@ textarea:focus {
 }
 
 
+/* Background of gallery when active  */
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
 
+.lg-backdrop.in {
+    opacity: 0.95;
+}
 
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 
